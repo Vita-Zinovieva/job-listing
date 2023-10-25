@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/style.css">
+  
+</head>
+<body>
+  <header>
+    <div class="header"></div>
+  </header>
+  <main class="main">
+    <button type="button" class="filter-button">Filter</button>
+    <nav class="filter-job" id="filter">
+      <ul class="filter-job__tools">
+        <li data-f="ruby">
+          <button class="filter-btn" data-f="ruby">Ruby</button>
+        </li>
+        <li data-f="css">
+          <button class="filter-btn" data-f="css">CSS</button>
+        </li>
+        <li data-f="javascript">
+          <button class="filter-btn" data-f="javascript">JavaScript</button>
+        </li>
+        <li data-f="sass">
+          <button class="filter-btn" data-f="sass">Sass</button>
+          </li>
+        <li data-f="react">
+          <button class="filter-btn" data-f="react">React</button>
+        </li>
+        <li data-f="fullstack">
+          <button class="filter-btn" data-f="fullstack">Fullstack</button>
+        </li>
+        <li data-f="midweight">
+          <button class="filter-btn" data-f="midweight">Midweight</button>
+        </li>
+        <li data-f="python">
+          <button class="filter-btn" data-f="python">Python</button>
+        </li>
+        <li data-f="frontend">
+          <button class="filter-btn" data-f="frontend">Frontend</button>
+        </li>
+        <li data-f="junior">
+          <button class="filter-btn" data-f="junior">Junior</button>
+        </li>
+        <li data-f="backend">
+          <button class="filter-btn" data-f="backend">Backend</button>
+        </li>
+      </ul>
+      <button type="button" class="filter-job__button" data-f="clear">Clear</button>
+    </nav>
+
+    <div class="card-container">
+     <div class="card-job" id="myCard">
+      <div class="create-line"></div>
+      <img src="./src/images/photosnap.svg" alt="logo company">
+      <div class="card-job__about">
+        <div class="flags">
+          <p class="card-job__name">Photoshop</p>
+          <div class="flag-new">NEW!</div>
+          <div class="flag-featured">FEATURED</div>
+        </div>
+        <h1 class="card-job__title">Senior Frontend Developer</h1>
+        <ul class="about">
+          <li class="about__posted">1d ago</li>
+          <span>
+          <circle cx="1.5" cy="1.5" r="1.5" />          
+          </span>
+          <li class="about__contract">Full Time</li>
+          <span>
+          <circle cx="1.5" cy="1.5" r="1.5" />          
+          </span>
+          <li class="about__location">USA Only</li>
+        </ul>
+      </div>
+      <hr>
+
+      <ul class="card-job__tools">
+        <li class="tools-items">
+          <p class="button ruby">Ruby</p>
+        </li>
+        <li class="tools-items">
+          <p class="button css">CSS</p>
+        </li>
+        <li class="tools-items">
+          <p class="button javascript">JavaScript</p>
+        </li>
+        <li class="tools-items">
+          <p class="button sass">Sass</p>
+          </li>
+        <li class="tools-items">
+          <p class="button react">React</p>
+        </li>
+      </ul>
+    </div> 
+    </div>
+    
+    <div class="card-container">
+      <div class="card-job" id="myCard">
+        <div class="create-line"></div>
+        <img src="./src/images/manage.svg" alt="logo company">
+        <div class="card-job__about">
+          <div class="flags">
+            <p class="card-job__name">Manage</p>
+            <div class="flag-new">NEW!</div>
+            <div class="flag-featured">FEATURED</div>
+          </div>
+          <h1 class="card-job__title">Featured Fullstack Developer</h1>
+          <ul class="about">
+            <li class="about__posted">1d ago</li>
+            <span>
+            <circle cx="1.5" cy="1.5" r="1.5" />          
+            </span>
+            <li class="about__contract">Part Time</li>
+            <span>
+            <circle cx="1.5" cy="1.5" r="1.5" />          
+            </span>
+            <li class="about__location">Remote</li>
+          </ul>
+        </div>
+        <hr>
+
+        <ul class="card-job__tools">
+          <li class="tools-items">
+            <p class="button fullstack">Fullstack</p>
+          </li>
+          <li class="tools-items">
+            <p class="button midweight">Midweight</p>
+          </li>
+          <li class="tools-items">
+            <p class="button python">Python</p>
+          </li>
+          <li class="tools-items">
+            <p class="button react">React</p>
+          </li>
+        </ul>
+      </div> 
+    </div>
+    
+
+    <div class="card-container">
+        <div class="card-job" id="myCard">
+          <div class="create-line"></div>
+          <img src="./src/images/myhome.svg" alt="logo company">
+          <div class="card-job__about">
+            <div class="flags">
+              <p class="card-job__name">MyHome</p>
+            </div>
+            <h1 class="card-job__title">Junior Frontend Developer</h1>
+            <ul class="about">
+              <li class="about__posted">5d ago</li>
+              <span>
+              <circle cx="1.5" cy="1.5" r="1.5" />          
+              </span>
+              <li class="about__contract">Contract</li>
+              <span>
+              <circle cx="1.5" cy="1.5" r="1.5" />          
+              </span>
+              <li class="about__location">USA Only</li>
+            </ul>
+          </div>
+          <hr>
+
+          <ul class="card-job__tools">
+            <li class="tools-items">
+              <p class="button frontend">Frontend</p>
+            </li>
+            <li class="tools-items">
+              <p class="button css">CSS</p>
+            </li>
+            <li class="tools-items">
+              <p class="button javascript">JavaScript</p>
+            </li>
+            <li class="tools-items">
+              <p class="button junior">Junior</p>
+              </li>
+          </ul>
+        </div>
+    </div>
+      
+
+    <div class="card-container">
+      <div class="card-job" id="myCard">
+        <div class="create-line"></div>
+        <img src="./src/images/account.svg" alt="logo company">
+        <div class="card-job__about">
+          <div class="flags">
+            <p class="card-job__name">Account</p>
+            <div class="flag-new">NEW!</div>
+            </div>
+          <h1 class="card-job__title">Junior Frontend Developer</h1>
+          <ul class="about">
+            <li class="about__posted">2d ago</li>
+            <span>
+            <circle cx="1.5" cy="1.5" r="1.5" />          
+            </span>
+            <li class="about__contract">Part Time</li>
+            <span>
+            <circle cx="1.5" cy="1.5" r="1.5" />          
+            </span>
+            <li class="about__location">USA Only</li>
+          </ul>
+        </div>
+        <hr>
+
+        <ul class="card-job__tools">
+          <li class="tools-items">
+            <p class="button frontend">Frontend</p>
+          </li>
+          <li class="tools-items">
+            <p class="button junior">Junior</p>
+          </li>
+          <li class="tools-items">
+            <p class="button javascript">JavaScript</p>
+          </li>
+          <li class="tools-items">
+            <p class="button sass">Sass</p>
+            </li>
+          <li class="tools-items">
+            <p class="button react">React</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+      
+
+    <div class="card-container">
+      <div class="card-job" id="myCard">
+        <div class="create-line"></div>
+        <img src="./src/images/loop-studios.svg" alt="logo company">
+        <div class="card-job__about">
+          <div class="flags">
+            <p class="card-job__name">Loop Studios</p>
+            
+          </div>
+          <h1 class="card-job__title">Software Engineer</h1>
+          <ul class="about">
+            <li class="about__posted">1w ago</li>
+            <span>
+            <circle cx="1.5" cy="1.5" r="1.5" />          
+            </span>
+            <li class="about__contract">Full Time</li>
+            <span>
+            <circle cx="1.5" cy="1.5" r="1.5" />          
+            </span>
+            <li class="about__location">Worldwide</li>
+          </ul>
+        </div>
+        <hr>
+
+        <ul class="card-job__tools">
+          <li class="tools-items">
+            <p class="button fullstack">Fullstack</p>
+          </li>
+          <li class="tools-items">
+            <p class="button midweight">Midweight</p>
+          </li>
+          <li class="tools-items">
+            <p class="button javascript">JavaScript</p>
+          </li>
+          <li class="tools-items">
+            <p class="button sass">Sass</p>
+            </li>
+          <li class="tools-items">
+            <p class="button ruby">Ruby</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+      
+
+    <div class="card-container">
+      <div class="card-job" id="myCard">
+          <div class="create-line"></div>
+          <img src="./src/images/manage.svg" alt="logo company">
+          <div class="card-job__about">
+            <div class="flags">
+              <p class="card-job__name">FaceIt</p>
+            </div>
+            <h1 class="card-job__title">Junior Backend Developer</h1>
+            <ul class="about">
+              <li class="about__posted">2w ago</li>
+              <span>
+              <circle cx="1.5" cy="1.5" r="1.5" />          
+              </span>
+              <li class="about__contract">Full Time</li>
+              <span>
+              <circle cx="1.5" cy="1.5" r="1.5" />          
+              </span>
+              <li class="about__location">UK only</li>
+            </ul>
+          </div>
+          <hr>
+
+          <ul class="card-job__tools">
+            <li class="tools-items">
+              <p class="button backend">Backend</p>
+            </li>
+            <li class="tools-items">
+              <p class="button junior">Junior</p>
+            </li>
+            <li class="tools-items">
+              <p class="button ruby">Ruby</p>
+            </li>
+            <li class="tools-items">
+              <p class="button ror">RoR</p>
+              </li>
+          </ul>
+      </div>
+    </div>
+    
+
+    <div class="card-container">
+      <div class="card-job" id="myCard">
+        <div class="create-line"></div>
+        <img src="./src/images/shortly.svg" alt="logo company">
+        <div class="card-job__about">
+          <div class="flags">
+            <p class="card-job__name">Shortly</p>
+          </div>
+          <h1 class="card-job__title">Junior Developer</h1>
+          <ul class="about">
+            <li class="about__posted">2w ago</li>
+            <span>
+            <circle cx="1.5" cy="1.5" r="1.5" />          
+            </span>
+            <li class="about__contract">Full Time</li>
+            <span>
+            <circle cx="1.5" cy="1.5" r="1.5" />          
+            </span>
+            <li class="about__location">Worldwide</li>
+          </ul>
+        </div>
+        <hr>
+
+        <ul class="card-job__tools">
+          <li class="tools-items">
+            <p class="button frontend">Frontend</p>
+          </li>
+          <li class="tools-items">
+            <p class="button junior">Junior</p>
+          </li>
+          <li class="tools-items">
+            <p class="button javascript">JavaScript</p>
+          </li>
+          <li class="tools-items">
+            <p class="button sass">Sass</p>
+            </li>
+          <li class="tools-items">
+            <p class="button html">HTML</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+      
+
+    <div class="card-container">
+      <div class="card-job" id="myCard">
+        <div class="create-line"></div>
+        <img src="./src/images/insure.svg" alt="logo company">
+        <div class="card-job__about">
+          <div class="flags">
+            <p class="card-job__name">Insure</p>
+          </div>
+          <h1 class="card-job__title">Junior Frontend Developer</h1>
+          <ul class="about">
+            <li class="about__posted">2w ago</li>
+            <span>
+            <circle cx="1.5" cy="1.5" r="1.5" />          
+            </span>
+            <li class="about__contract">Full Time</li>
+            <span>
+            <circle cx="1.5" cy="1.5" r="1.5" />          
+            </span>
+            <li class="about__location">USA Only</li>
+          </ul>
+        </div>
+        <hr>
+
+        <ul class="card-job__tools">
+          <li class="tools-items">
+            <p class="button junior">Junior</p>
+          </li>
+          <li class="tools-items">
+            <p class="button frontend">Frontend</p>
+          </li>
+          <li class="tools-items">
+            <p class="button javascript">JavaScript</p>
+          </li>
+          <li class="tools-items">
+            <p class="button sass">Sass</p>
+            </li>
+          <li class="tools-items">
+            <p class="button vue">Vue</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+
+    <div class="card-container">
+      <div class="card-job" id="myCard">
+        <div class="create-line"></div>
+        <img src="./src/images/eyecam-co.svg" alt="logo company">
+        <div class="card-job__about">
+          <div class="flags">
+            <p class="card-job__name">Eyecam Co.</p>
+          </div>
+          <h1 class="card-job__title">Full Stack Engineer</h1>
+          <ul class="about">
+            <li class="about__posted">3w ago</li>
+            <span>
+            <circle cx="1.5" cy="1.5" r="1.5" />          
+            </span>
+            <li class="about__contract">Full Time</li>
+            <span>
+            <circle cx="1.5" cy="1.5" r="1.5" />          
+            </span>
+            <li class="about__location">Worldwide</li>
+          </ul>
+        </div>
+        <hr>
+
+        <ul class="card-job__tools">
+          <li class="tools-items">
+            <p class="button fullstack">Fullstack</p>
+          </li>
+          <li class="tools-items">
+            <p class="button midweight">Midweight</p>
+          </li>
+          <li class="tools-items">
+            <p class="button javaScript">JavaScript</p>
+          </li>
+          <li class="tools-items">
+            <p class="button python">Python</p>
+            </li>
+          <li class="tools-items">
+            <p class="button django">Django</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+      
+
+    <div class="card-container">
+      <div class="card-job" id="myCard">
+        <div class="create-line"></div>
+        <img src="./src/images/the-air-filter-company.svg" alt="logo company">
+        <div class="card-job__about">
+          <div class="flags">
+            <p class="card-job__name">The Air Filter Company</p>
+          </div>
+          <h1 class="card-job__title">Front-end Dev</h1>
+          <ul class="about">
+            <li class="about__posted">1mo ago</li>
+            <span>
+            <circle cx="1.5" cy="1.5" r="1.5" />          
+            </span>
+            <li class="about__contract">Part Time</li>
+            <span>
+            <circle cx="1.5" cy="1.5" r="1.5" />          
+            </span>
+            <li class="about__location">Worldwide</li>
+          </ul>
+        </div>
+        <hr>
+
+        <ul class="card-job__tools">
+          <li class="tools-items">
+            <p class="button frontend">Frontend</p>
+          </li>
+          <li class="tools-items">
+            <p class="button junior">Junior</p>
+          </li>
+          <li class="tools-items">
+            <p class="button javascript">JavaScript</p>
+          </li>
+          <li class="tools-items">
+            <p class="button sass">Sass</p>
+            </li>
+          <li class="tools-items">
+            <p class="button react">React</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+ 
+</body>
+<script type="module" src="./src/index.js"></script>
+</html>

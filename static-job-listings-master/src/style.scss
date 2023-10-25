@@ -1,0 +1,342 @@
+//utills
+:root{
+  --background: hsl(180, 52%, 96%);
+  --cyan: hsl(180, 29%, 50%);
+  --filter: hsl(180, 31%, 95%);
+  --darkcCyan: hsl(180, 8%, 52%);
+  --light-grayish-blue: hsl(223, 64%, 98%);
+  --green: hsl(180, 39%, 48%);
+  --headerbg: hsl(180, 32%, 36%); 
+  --veryDarkcyan: hsl(180, 14%, 20%); //(with 75% opacity for lightbox background)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+/* font-family: 'League Spartan', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+ max-width: 1440px;
+ font-family: 'League Spartan';
+ font-size: 16px; //(paragraph)
+}
+a{
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.header{
+background-color: hsl(180, 32%, 36%); ;
+height: 156px;
+background-image: url(../src/images/bg-header-mobile.svg);
+  @media screen and (width > 770px) { 
+  background-image: url(../src/images/bg-header-desktop.svg);
+  
+  }
+}
+.main {
+  padding: 6.7% 5.9% ;
+  background: #EFFAFA;
+  @media screen and (width > 770px) { 
+    padding: 80px 165px ;
+  }
+}
+                         //Filter//
+.filter-button,
+.button,
+.filter-btn {
+    border: none;
+    padding: 8px 10px;
+    max-width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    background: #EEF6F6;
+    color: #4AA9A9;
+    font-family: 'League Spartan', sans-serif;;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    &:hover{
+      background: #4AA9A9 ;
+      color: #EEF6F6;
+    }
+  }
+  
+.filter-button {
+  font-size: 20px;
+}
+
+.filter-job {
+  min-height: 50px;
+  max-width: 1058px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 0.3s ease-out;
+}
+.filter-job.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.filter-job__button{
+    float: right;
+    border: none;
+    padding: 8px 10px;
+    width:auto;
+    height: auto;
+    border-radius: 5px;
+    background: white;
+    color: var(--veryDarkcyan);
+    font-family: 'League Spartan', sans-serif;;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: auto 20px auto auto;
+    &:hover{
+      color: #4AA9A9;
+      
+      
+    }
+  
+}
+
+.card-job,
+.filter-job {
+  background: #FFF;
+  min-width: 330px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  @media screen and (width > 770px) {
+   flex-direction: row;
+   max-width: 1110px;
+    
+   } 
+  &:hover{
+    box-shadow: 20px 20px 20px 0px rgba(160, 220, 220, 0.17);
+  }
+
+}
+.filter-job__tools{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 15px;
+  @media screen and (width > 1000px){
+    margin: auto ;
+  }
+}
+
+.hide {
+  opacity: 1;
+  animation-name: a1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes a1 {
+  to {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
+
+//Cards// 
+.card-container {
+display: flex;
+flex-wrap: wrap;
+}
+
+.card-job {
+flex: 0 0 calc(100% - 20px); /* Adjust this value based on your desired card width */
+/*margin: 10px;
+ Add any other styles you have for card-job */
+@media screen and (width > 770px) {
+   height: 155px; 
+   } 
+}
+
+/* .card-container.filtered {
+  justify-content: center;
+}
+
+.card-container.filtered .card-job {
+  flex: 0 0 calc(100% - 20px); /* Adjust this value based on your desired card width 
+} */
+
+
+
+.create-line {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 100%;
+  background: #4AA9A9;
+  border-radius: 10px 0 0 10px;
+  visibility: hidden;
+} 
+.card-job:hover .create-line,
+.card-job:focus .create-line {
+  visibility: visible;
+}
+hr {
+  min-width: 255px;
+  height: 1px;
+  background: #7B8E8E;
+  margin: 0px auto 20px 20px;
+  margin-bottom: 20px;
+  @media screen and (width > 770px) {
+    display: none;
+  }
+}
+img{
+  width: 50px;
+  height: 50px; 
+  position: relative;
+  top: -25px;
+  left: 20px;
+  @media screen and (width > 1000px) {
+    margin: auto 35px;
+    width: 88px;
+    height: 88px; 
+    position: static;
+  }
+}
+.card-job__about {
+  width: 260px;
+  height: 110px;
+  margin-left: 20px;
+  @media screen and (width > 500px) {
+    margin: 10px 20px;}
+  
+  @media screen and (width > 1000px) {
+    margin: auto 0;
+    width: 254px;
+    height: 91px;
+
+   }
+}
+.flags {
+  display: flex;
+  justify-items: flex-start;
+  gap:10px;
+  align-items: center;
+  max-width: 235px;
+  margin-bottom: 15px;
+}
+.card-job__name {
+  text-align: center;
+  color: #4AA9A9;
+  font-family: 'League Spartan', sans-serif;;
+  font-weight: 700;
+  font-size: 16px;
+  @media screen and (width > 1000px) {
+    font-size: 20px;}
+}
+
+.flag-new,
+.flag-featured {
+ color: #FDF7F7;
+  font-family: 'League Spartan', sans-serif;;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+  text-align: center;
+  padding-top: 8px;
+}
+.flag-new {
+  width: 50px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #4AA9A9;
+}
+.flag-featured {
+  width: 80px;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #2C3A3A;
+}
+.card-job__title {
+  margin-bottom: 15px;
+  color: #000;
+  font-family: 'League Spartan', sans-serif;;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  @media screen and (width > 1000px) {
+    font-size: 20px;}
+}
+.about{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  //gap: 24px;
+  align-items: center;
+  justify-content: space-between; 
+  max-width: 265px;
+  @media screen and (width > 1000px) {
+    
+  }
+}
+.about__posted, 
+.about__contract, 
+.about__location {
+  color: #7B8E8E;
+font-family: 'League Spartan', sans-serif;;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+@media screen and (width > 1000px) {
+  font-size: 18px;
+}
+
+}
+
+span circle{
+  display: flex;
+  background-color:#7B8E8E;
+  width: 3px;
+  height: 3px;
+}
+
+
+.card-job__tools {
+  height: auto;
+  min-width: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  margin: 0 6.1% 6.1% 6.1%;
+  @media screen and (width > 500px) {
+    margin: 0 6.1% 6.1% 20px;}
+  @media screen and (width > 1000px) {
+    margin: auto 35px auto auto;
+    max-width: 440px;
+    //flex-wrap: nowrap;
+    gap: 18px;
+  }
+}
+
+.button {
+font-size: 16px;
+  
+}
